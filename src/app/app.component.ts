@@ -49,6 +49,8 @@ export class AppComponent implements OnInit {
     }
     )
   }
+
+
   public onEmpDelete(id: number): void {
     this.empService.deleteEmployees(id).subscribe (
       (response) => { console.log(response); this.getEmployees();}, 
@@ -57,6 +59,8 @@ export class AppComponent implements OnInit {
     }
     )
   }
+
+  
     ngOnInit(): void {
       this.getEmployees();
     }

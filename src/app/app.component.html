@@ -111,36 +111,36 @@
         <div class="modal-body">
           
             <form #updateForm="ngForm" (ngSubmit)="onUpdateEmployee(updateForm)">
-              <input type="hidden" ngModel name="id" value="{{emp.id}}" class="form-control" id="exampleInputId1">
+              <input type="hidden" ngModel="{{emp.id}}" name="id" id="id"/>
                 <div class="mb-3">
                     <label for="exampleInputName1" class="form-label">Full Name</label>
-                    <input type="text" ngModel name="name" class="form-control" id="exampleInputName1">
+                    <input type="text" ngModel="{{emp.name}}" name="name" class="form-control" id="exampleInputName1">
                 </div>
 
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email"  ngModel name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email"  ngModel="{{emp.email}}" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                
                 <div class="mb-3">
                     <label for="exampleInputMobile1" class="form-label">Mobile Number</label>
-                    <input type="text"  ngModel name="mobilenumber" class="form-control" id="exampleMobile1" >
+                    <input type="text"  ngModel="{{emp.mobilenumber}}" name="mobilenumber" class="form-control" id="exampleMobile1" >
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleInputDesignation1" class="form-label">Designation</label>
-                    <input type="text"  ngModel name="designation" class="form-control" id="exampleInputDesignation1">
+                    <input type="text"  ngModel="{{emp.designation}}" name="designation" class="form-control" id="exampleInputDesignation1">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleInputDepartment1" class="form-label">Department</label>
-                    <input type="text"  ngModel name="department" class="form-control" id="exampleInputDepartment1">
+                    <input type="text"  ngModel="{{emp.department}}" name="department" class="form-control" id="exampleInputDepartment1">
                 </div>
 
                 <div class="mb-3">
                   <label for="exampleInputimageUrl1" class="form-label">Image Url</label>
-                  <input type="text" ngModel name="imageurl" class="form-control" id="exampleInputImageUrl1">
+                  <input type="text" ngModel="{{emp.imageurl}}" name="imageurl" class="form-control" id="exampleInputImageUrl1">
               </div>
                 <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
               </form>
